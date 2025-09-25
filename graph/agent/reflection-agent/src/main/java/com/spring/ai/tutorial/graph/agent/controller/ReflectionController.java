@@ -35,7 +35,7 @@ public class ReflectionController {
 
     @GetMapping("/chat")
     public String simpleChat(@RequestParam(value = "query", defaultValue = "人工智能社会发展中起到的作用", required = false) String query) throws GraphRunnerException {
-        return compiledGraph.invoke(Map.of(ReflectAgent.MESSAGES, List.of(new UserMessage(query)))).flatMap(invoke -> invoke
+        return compiledGraph.call(Map.of(ReflectAgent.MESSAGES, List.of(new UserMessage(query)))).flatMap(invoke -> invoke
                         .<List<Message>>value(ReflectAgent.MESSAGES))
                 .orElseThrow()
                 .stream()

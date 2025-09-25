@@ -73,7 +73,7 @@ public class AssistantGraphNode implements NodeAction {
                 .addEdge(StateGraph.START, this.NODE_ID)
                 .addEdge(this.NODE_ID, StateGraph.END);
 
-        OverAllState invokeState = stateGraph.compile().invoke(Map.of(ReflectAgent.MESSAGES, messages)).get();
+        OverAllState invokeState = stateGraph.compile().call(Map.of(ReflectAgent.MESSAGES, messages)).get();
         List<Message> reactMessages = (List<Message>) invokeState.value(ReflectAgent.MESSAGES).orElseThrow();
 
         return Map.of(ReflectAgent.MESSAGES, reactMessages);

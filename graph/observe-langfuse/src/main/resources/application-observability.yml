@@ -37,6 +37,6 @@ otel:
     otlp:
       # OpenTelemetry exporter endpoint configuration. For details, refer to the official Langfuse documentation: https://langfuse.com/docs/opentelemetry/get-started
       endpoint: "https://us.cloud.langfuse.com/api/public/otel" # 🇺🇸 US data region
-      headers:
-        Authorization: "Basic ${YOUR_BASE64_ENCODED_CREDENTIALS}" # echo -n "pk-xxx:sk-xxx" | base64
+#      headers:
+#        Authorization: "Basic ${YOUR_BASE64_ENCODED_CREDENTIALS}" # echo -n "pk-xxx:sk-xxx" | base64
       protocol: http/protobuf

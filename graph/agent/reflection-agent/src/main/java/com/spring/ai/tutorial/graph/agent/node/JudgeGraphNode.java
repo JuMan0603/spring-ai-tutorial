@@ -86,7 +86,7 @@ public class JudgeGraphNode implements NodeAction {
 
         CompiledGraph compile = stateGraph.compile();
 
-        OverAllState invokeState = compile.invoke(Map.of(ReflectAgent.MESSAGES, messages)).get();
+        OverAllState invokeState = compile.call(Map.of(ReflectAgent.MESSAGES, messages)).get();
 
         UnaryOperator<List<Message>> convertLastToUserMessage = messageList -> {
             int size = messageList.size();

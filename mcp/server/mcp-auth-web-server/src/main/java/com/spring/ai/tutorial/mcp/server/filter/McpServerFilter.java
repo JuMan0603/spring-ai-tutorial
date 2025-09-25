@@ -34,6 +34,7 @@ public class McpServerFilter implements WebFilter {
         } else {
             // token验证失败，返回401未授权错误
             logger.warn("Token验证失败: 请求的URL: {}, 提供的TOKEN: {}", exchange.getRequest().getURI(), token);
+            logger.warn("要求的token为：{}", TOKEN_VALUE);
             exchange.getResponse().setStatusCode(org.springframework.http.HttpStatus.UNAUTHORIZED);
             return exchange.getResponse().setComplete();
         }
