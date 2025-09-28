@@ -16,6 +16,10 @@ chat目录
     - openai-chat                       # 基于openai实现chat案例
     - deepseek-chat                     # 基于deepseek实现chat案例
     - chat-setting                      # chat client的连接、请求时间设置
+image目录
+    - alibaba-image                     # 基于alibaba实现image生成案例
+video目录
+    - alibaba-video                     # 基于alibaba实现video生成案例
 advisor目录                         
     - advisor-base                  # advisor绑定内存记忆案例
     - advisor-deep-think            # 基于advisor的深度思考案例
