@@ -60,6 +60,7 @@
         <module>mcp/server/mcp-auth-web-server</module>
         <module>image/alibaba-image</module>
         <module>video/alibaba-video</module>
+        <module>deepresearch</module>
     </modules>
 
     <properties>

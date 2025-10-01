@@ -75,6 +75,8 @@ other目录
     - restful服务                           # 提供接口调用服务，模拟存量接口
     - nacos-swagger-restful(待补充)         # 基于nacos+swagger的接口
     - nacos-restful                        # 基于nacos3.*的接口    
+    
+deepresearch                         # 基于spring ai alibaba graph实现深度研究案例
 ```
 视频讲解地址：[B站-视频讲解](https://www.bilibili.com/video/BV17NMsziEqp?vd_source=8393ba8b4463e2acda959f2ff2c792f6&spm_id_from=333.788.videopod.sections)
 
@@ -85,3 +87,9 @@ other目录
 添加vx，备注交流，可加入交流群
 
 <img src="docx/vx.png" style="width:120px">
+
+
+https://yingziimage.oss-cn-beijing.aliyuncs.com/video/deep_research.mov
+<video src="https://yingziimage.oss-cn-beijing.aliyuncs.com/video/deep_research.mov" controls style="width:100%; max-width:800px;">
+您的浏览器不支持视频播放。
+</video>

@@ -2,7 +2,6 @@ package com.spring.ai.tutorial.graph.controller.GraphProcess;
 
 import com.alibaba.cloud.ai.graph.CompiledGraph;
 import com.alibaba.cloud.ai.graph.NodeOutput;
-import com.alibaba.cloud.ai.graph.async.AsyncGenerator;
 import com.alibaba.cloud.ai.graph.streaming.StreamingOutput;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -13,7 +12,6 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Sinks;
 
 import java.util.Map;
-import java.util.concurrent.CompletionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -28,12 +26,14 @@ public class GraphProcess {
 
     private CompiledGraph compiledGraph;
 
+    private final ExecutorService executor = Executors.newFixedThreadPool(10);
+
     public GraphProcess(CompiledGraph compiledGraph) {
         this.compiledGraph = compiledGraph;
     }
 
     public void processStream(Flux<NodeOutput> nodeOutputFlux, Sinks.Many<ServerSentEvent<String>> sink) {
-        nodeOutputFlux
+        executor.submit(() -> nodeOutputFlux
                 .doOnNext(output -> {
                     logger.info("output = {}", output);
                     String nodeName = output.node();
@@ -56,6 +56,6 @@ public class GraphProcess {
                     logger.error("Error occurred during streaming", e);
                     sink.tryEmitError(e);
                 })
-                .subscribe();
+                .subscribe());
     }
 }

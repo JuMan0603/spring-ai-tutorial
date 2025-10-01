@@ -61,7 +61,7 @@ public class DashScopeVideoModel implements VideoModel {
                     }
                 }
 
-                throw new TransientAiException("Video generation still pending, retry ...");
+                throw new RuntimeException("Video generation still pending, retry ...");
             });
         }
     }
