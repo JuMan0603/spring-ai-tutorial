@@ -22,31 +22,18 @@
         <module>advisor/advisor-memory-mysql</module>
         <module>advisor/advisor-memory-redis</module>
         <module>advisor/advisor-memory-sqlite</module>
-        <module>mcp/server/mcp-webflux-server</module>
-        <module>mcp/client/mcp-webflux-client</module>
-        <module>mcp/server/mcp-stdio-server</module>
-        <module>mcp/client/mcp-stdio-client</module>
         <module>vector/vector-redis</module>
         <module>rag/rag-etl-pipeline</module>
-        <module>mcp/server/mcp-nacos3-server</module>
-        <module>mcp/client/mcp-nacos3-client</module>
         <module>rag/rag-evaluation</module>
         <module>graph/stream-node</module>
         <module>graph/human-node</module>
         <module>graph/simple</module>
         <module>graph/mcp-node</module>
         <module>graph/parallel-node</module>
-        <module>mcp/client/mcp-auth-client</module>
-        <module>mcp/server/mcp-auth-server</module>
         <module>other/restful</module>
         <module>other/nacos-swagger-restfult</module>
-        <module>mcp/server/mcp-nacos-parse-swagger-server</module>
-        <module>mcp/server/mcp-gateway-server</module>
         <module>other/nacos-restful</module>
-        <module>mcp/client/mcp-dynamic-tool-client</module>
-        <module>mcp/client/mcp-return-direct-client</module>
         <module>graph/observe-langfuse</module>
-        <module>mcp/client/mcp-recovery-client</module>
         <module>advisor/advisor-deep-think</module>
         <module>graph/agent/react-agent</module>
         <module>graph/agent/reflection-agent</module>
@@ -57,10 +44,11 @@
         <module>observation/observability</module>
         <module>observation/observability-langfuse</module>
         <module>vector/vector-neo4j</module>
-        <module>mcp/server/mcp-auth-web-server</module>
+        <module>mcp</module>
         <module>image/alibaba-image</module>
         <module>video/alibaba-video</module>
         <module>deepresearch</module>
+        <module>mcp/server/mcp-streamable-webflux-server</module>
     </modules>
 
     <properties>
@@ -69,7 +57,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Spring AI -->
-        <spring-ai.version>1.0.2</spring-ai.version>
+        <spring-ai.version>1.0.3</spring-ai.version>
 
         <!-- Spring Boot -->
         <spring-boot.version>3.4.5</spring-boot.version>

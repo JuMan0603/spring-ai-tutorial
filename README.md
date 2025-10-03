@@ -44,6 +44,9 @@ mcp目录
     - client目录                        
         - mcp-stdio-client                  # MCP的stdio客户端案例
         - mcp-webflux-client                # MCP的webflux客户端案例
+        - mcp-streamable-client             # MCP的streamable客户端案例
+        - mcp-streamable-webflux-client     # MCP的streamable webflux客户端案例
+        - mcp-annotation-client             # MCP基于注解的客户端案例
         - mcp-nacos3-client                 # MCP基于Nacos3.*实现分布式部署客户端案例
         - mcp-auth-client                   # MCP基于请求头的授权客户端
         - mcp-recovery-client               # MCP的SSE连接断开，自动重连案例
@@ -56,6 +59,9 @@ mcp目录
         - mcp-auth-server                       # MCP基于请求头的授权服务端-工具粒度
         - mcp-auth-web-server                   # MCP基于请求头的授权服务端-粒度
         - mcp-gateway-server                    # SAA的gateway服务零代码实现存量应用转换MCP案例
+        - mcp-streamable-webmvc-server          # MCP的streamable webmvc案例
+        - mcp-streamable-webflux-server         # MCP的streamable webflux案例
+        - mcp-annotation-server                 # MCP基于注解的服务端案例
         - mcp-nacos-parse-swagger-server(待补充) # MCP基于nacos动态解析swagger的restful服务端案例
 ovservation目录
     - observabilty                              # ObservationHandler下的client、model、tool、embedding的观测案例
@@ -76,7 +82,7 @@ other目录
     - nacos-swagger-restful(待补充)         # 基于nacos+swagger的接口
     - nacos-restful                        # 基于nacos3.*的接口    
     
-deepresearch                         # 基于spring ai alibaba graph实现深度研究案例
+deepresearch(待补充)                        # 基于spring ai alibaba graph实现深度研究案例
 ```
 视频讲解地址：[B站-视频讲解](https://www.bilibili.com/video/BV17NMsziEqp?vd_source=8393ba8b4463e2acda959f2ff2c792f6&spm_id_from=333.788.videopod.sections)
 
@@ -88,8 +94,6 @@ deepresearch                         # 基于spring ai alibaba graph实现深度
 
 <img src="docx/vx.png" style="width:120px">
 
-
-https://yingziimage.oss-cn-beijing.aliyuncs.com/video/deep_research.mov
-<video src="https://yingziimage.oss-cn-beijing.aliyuncs.com/video/deep_research.mov" controls style="width:100%; max-width:800px;">
-您的浏览器不支持视频播放。
-</video>
+deepresearch是简化版：https://github.com/spring-ai-alibaba/deepresearch
+[![](https://yingziimage.oss-cn-beijing.aliyuncs.com/img/image-20251001121713795.png)](https://yingziimage.oss-cn-beijing.aliyuncs.com/video/deep_research.mov)
+video：https://yingziimage.oss-cn-beijing.aliyuncs.com/video/deep_research.mov
