@@ -48,7 +48,6 @@
         <module>image/alibaba-image</module>
         <module>video/alibaba-video</module>
         <module>deepresearch</module>
-        <module>mcp/server/mcp-streamable-webflux-server</module>
     </modules>
 
     <properties>
