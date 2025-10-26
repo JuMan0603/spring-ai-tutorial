@@ -1,6 +1,7 @@
 package com.spring.ai.tutorial.mcp.client;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.tool.ToolCallback;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
@@ -15,6 +16,7 @@ import java.util.Scanner;
  * @author yingzi
  * @date 2025/6/4 18:09
  */
+//@SpringBootApplication(scanBasePackages = {"com.spring.ai.tutorial.mcp.client","com.alibaba.cloud.ai"})
 @SpringBootApplication
 public class Nacos3ClientApplication {
 
@@ -23,12 +25,18 @@ public class Nacos3ClientApplication {
     }
 
     @Bean
-    public CommandLineRunner predefinedQuestions(ChatClient.Builder chatClientBuilder, @Qualifier("loadbalancedMcpAsyncToolCallbacks") ToolCallbackProvider tools,
+    public CommandLineRunner predefinedQuestions(ChatClient.Builder chatClientBuilder, @Qualifier("distributedAsyncToolCallback") ToolCallbackProvider tools,
                                                  ConfigurableApplicationContext context) {
+
+        ToolCallback[] toolCallbacks = tools.getToolCallbacks();
+        System.out.println(">>> Available tools: ");
+        for (int i = 0; i < toolCallbacks.length; i++) {
+            System.out.println("[" + i + "] " + toolCallbacks[i].getToolDefinition().name());
+        }
 
         return args -> {
             var chatClient = chatClientBuilder
-                    .defaultToolCallbacks(tools)
+                    .defaultToolCallbacks(toolCallbacks)
                     .build();
 
             Scanner scanner = new Scanner(System.in);

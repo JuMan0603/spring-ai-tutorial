@@ -19,6 +19,7 @@ spring:
           resource: true
           prompt: true
           completion: true
+        protocol: SSE
     dashscope:
       api-key: ${DASHSCOPE_API_KEY}
 
@@ -33,3 +34,10 @@ spring:
             enabled: true
             service-group: mcp-server
             service-name: webflux-mcp-server
+#debug: true
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        boot:
+#          autoconfigure: DEBUG

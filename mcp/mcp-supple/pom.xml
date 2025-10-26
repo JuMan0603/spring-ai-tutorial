@@ -12,6 +12,16 @@
 
     <groupId>com.spring.ai.tutorial.mcp.enhance</groupId>
     <artifactId>mcp-supple</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>server/mcp-nacos3-server</module>
+        <module>server/mcp-nacos-parse-swagger-server</module>
+        <module>server/mcp-gateway-server</module>
+        <module>client/mcp-nacos3-client</module>
+        <module>client/mcp-recovery-client</module>
+        <module>client/mcp-return-direct-client</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
