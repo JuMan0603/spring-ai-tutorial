@@ -6,8 +6,9 @@
 版本：
 - JDK21
 - SpringBoot 3.4.5
-- SpringAI 1.0.2：https://github.com/spring-projects/spring-ai
+- SpringAI 1.1.0-M3：https://github.com/spring-projects/spring-ai
 - SpringAI Alibaba(SAA) 1.0.0.4：https://github.com/alibaba/spring-ai-alibaba
+- Spring AI Extensions 1.1.0.0-M3：https://github.com/spring-ai-alibaba/spring-ai-extensions
 
 ### 项目目录结构
 ```text
