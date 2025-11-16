@@ -98,11 +98,9 @@ deepresearch(待补充)                        # 基于spring ai alibaba graph�
 
 微信推文系列：[微信推文版](https://mp.weixin.qq.com/s/9iLebKR8HNwalOVeDz5PXQ)
 
-飞书云文档：[飞书云文档版-最新教程](https://ik3te1knhq.feishu.cn/wiki/WVirwu30Xik0WXks7HGcB6E2nA8)
+提供知识星球服务，可获得上述教程代码的配套文档资料
 
-添加vx，备注交流，可加入交流群
-
-<img src="docx/vx.png" style="width:120px">
+<img src="docx/知识星球-1.jpg" style="width:120px">
 
 deepresearch是简化版：https://github.com/spring-ai-alibaba/deepresearch
 [![](https://yingziimage.oss-cn-beijing.aliyuncs.com/img/image-20251001121713795.png)](https://yingziimage.oss-cn-beijing.aliyuncs.com/video/deep_research.mov)
